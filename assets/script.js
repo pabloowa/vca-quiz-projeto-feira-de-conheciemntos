@@ -1,97 +1,97 @@
 // Banco de Questões com Português Otimizado
 const questions = [
   {
-    question: "No Gerenciamento da Rotina de Falconi, qual é a sequência correta para estruturar uma atividade que pretenda durar em uma empresa?",
+    question: "Segundo o roteiro apresentado, quais são as duas coisas mais importantes para tornar a gestão possível dentro de uma empresa?",
     answers: [
-      { text: "Meta → POP → Fluxograma → Controle", correct: false },
-      { text: "Fluxograma → POP → Gráfico Sequencial → Melhoria contínua", correct: true },
-      { text: "Organograma → Meta → Resultado → Revisão", correct: false },
-      { text: "Diagnóstico → Contratação → Treinamento → Avaliação", correct: false }
+      { text: "Tecnologia e marketing", correct: false },
+      { text: "Cada colaborador saber seu papel e os processos serem padronizados", correct: true },
+      { text: "Contratação e demissão estratégica", correct: false },
+      { text: "Reuniões frequentes e relatórios mensais", correct: false }
     ]
   },
   {
-    question: "O Campos Vivant, maior empreendimento de alto padrão do Nordeste, fica em qual cidade e pertence a qual construtora?",
+    question: "O que Falconi afirma que a padronização dos processos permite fazer dentro de uma empresa?",
     answers: [
-      { text: "Salvador — Odebrecht", correct: false },
-      { text: "Feira de Santana — MRV", correct: false },
-      { text: "Vitória da Conquista — VCA", correct: true },
-      { text: "Guanambi — Direcional", correct: false }
+      { text: "Reduzir o número de colaboradores necessários", correct: false },
+      { text: "Rastrear erros e melhorar a qualidade, pois todos estão alinhados", correct: true },
+      { text: "Eliminar a necessidade de treinamentos periódicos", correct: false },
+      { text: "Garantir que apenas gestores tomem decisões", correct: false }
     ]
   },
   {
-    question: "Segundo Falconi, o POP (Procedimento Operacional Padrão) tem como principal função:",
+    question: "Como Falconi chama os problemas que surgem mesmo depois que os processos já estão padronizados?",
     answers: [
-      { text: "Avaliar o desempenho individual de cada funcionário mensalmente", correct: false },
-      { text: "Garantir que qualquer pessoa execute uma tarefa com o mesmo padrão de qualidade", correct: true },
-      { text: "Substituir o organograma hierárquico da empresa", correct: false },
-      { text: "Registrar os custos operacionais de cada departamento", correct: false }
+      { text: "Falhas críticas", correct: false },
+      { text: "Desvios operacionais", correct: false },
+      { text: "Anomalias", correct: true },
+      { text: "Gargalos sistêmicos", correct: false }
     ]
   },
   {
-    question: "Qual das opções descreve corretamente o fluxo cronológico de operações da VCA Construtora?",
+    question: "O PDCA é uma das ferramentas apresentadas para tratar anomalias. Qual é a sequência correta do ciclo?",
     answers: [
-      { text: "Legalização → Comercialização → Novos Projetos → Estudo de Viabilidade", correct: false },
-      { text: "Comercialização → Legalização → Estudo de Viabilidade → Novos Projetos", correct: false },
-      { text: "Estudo de Viabilidade → Novos Projetos → Legalização → Comercialização", correct: true },
-      { text: "Novos Projetos → Estudo de Viabilidade → Comercialização → Legalização", correct: false }
+      { text: "Planejar → Verificar → Executar → Agir", correct: false },
+      { text: "Identificar → Planejar → Documentar → Corrigir", correct: false },
+      { text: "Planejar → Executar → Verificar → Agir corretivamente", correct: true },
+      { text: "Agir → Planejar → Executar → Documentar", correct: false }
     ]
   },
   {
-    question: "Por que o Gráfico Sequencial de Falconi é especialmente útil no setor da construção civil?",
+    question: "Qual foi a frase marcante dita pelo Clécio Pereira sobre o erro dentro da empresa?",
     answers: [
-      { text: "Porque permite calcular automaticamente o custo por metro quadrado", correct: false },
-      { text: "Porque monitora processos ao longo do tempo, essencial para controlar prazos com cartórios e prefeituras", correct: true },
-      { text: "Porque substitui o contrato de trabalho dos funcionários operacionais", correct: false },
-      { text: "Porque gera relatórios financeiros integrados ao sistema bancário", correct: false }
+      { text: "\"Errar é humano, mas errar duas vezes é gestão ruim\"", correct: false },
+      { text: "\"Faz parte da jornada o erro. O que não faz parte é a permanência do erro\"", correct: true },
+      { text: "\"Prefiro um time sem erros a um time que aprende com eles\"", correct: false },
+      { text: "\"Todo erro tem um culpado, e é papel do gestor identificá-lo\"", correct: false }
     ]
   },
   {
-    question: "Clécio Pereira, diretor da VCA, afirma que aprendeu a valorizar as pessoas acima dos processos em qual empresa anterior?",
+    question: "Segundo o roteiro, o que Falconi orienta fazer após corrigir um erro — em vez de apenas resolver na hora?",
     answers: [
-      { text: "Itaú Unibanco", correct: false },
-      { text: "Petrobras", correct: false },
-      { text: "Coca-Cola", correct: true },
-      { text: "Ambev", correct: false }
+      { text: "Registrar o nome do responsável pelo erro", correct: false },
+      { text: "Padronizar a solução e monitorar os resultados para que se mantenham", correct: true },
+      { text: "Apresentar o erro em reunião para toda a equipe", correct: false },
+      { text: "Contratar um consultor externo para revisão", correct: false }
     ]
   },
   {
-    question: "Segundo o diagnóstico organizacional da VCA, qual prática de remuneração variável estava sendo estudada para engajar a equipe?",
+    question: "Na visão do Clécio, existe um ponto máximo de excelência que uma empresa pode atingir e manter para sempre?",
     answers: [
-      { text: "Stock options para todos os cargos", correct: false },
-      { text: "Comissão por metro quadrado entregue", correct: false },
-      { text: "Programa de participação nos lucros (PLR)", correct: true },
-      { text: "Bônus anual atrelado ao NPS do cliente", correct: false }
+      { text: "Sim, quando todos os processos estão 100% padronizados", correct: false },
+      { text: "Sim, quando a empresa atinge liderança de mercado", correct: false },
+      { text: "Não — ele afirma que não existe um \"ápice\" definitivo", correct: true },
+      { text: "Sim, mas apenas em empresas de pequeno porte", correct: false }
     ]
   },
   {
-    question: "No modelo de Falconi, o que diferencia uma empresa de alto desempenho de uma empresa comum?",
+    question: "Para que tudo funcione — padrões, PDCA e inovação — o que Falconi aponta como elemento fundamental?",
     answers: [
-      { text: "O alto investimento em marketing e branding", correct: false },
-      { text: "A capacidade de contratar gestores com MBA internacional", correct: false },
-      { text: "Processos padronizados, metas claras e melhoria contínua baseada em dados", correct: true },
-      { text: "O uso de tecnologias de inteligência artificial na operação", correct: false }
+      { text: "Investimento constante em tecnologia", correct: false },
+      { text: "O treinamento e o desenvolvimento das pessoas", correct: true },
+      { text: "A expansão para novos mercados", correct: false },
+      { text: "A criação de um departamento de qualidade", correct: false }
     ]
   },
   {
-    question: "O Campos Vivant possui aproximadamente quantos hectares e qual o total de área construída?",
+    question: "Segundo o Clécio, além das competências técnicas, o que as grandes empresas mais valorizam em um profissional?",
     answers: [
-      { text: "150 ha e 1 milhão de m²", correct: false },
-      { text: "300 ha e 3 milhões de m²", correct: true },
-      { text: "500 ha e 5 milhões de m²", correct: false },
-      { text: "200 ha e 2,5 milhões de m²", correct: false }
+      { text: "O histórico acadêmico e as certificações obtidas", correct: false },
+      { text: "A experiência prévia em empresas conhecidas", correct: false },
+      { text: "A vontade de realizar, de fazer — a iniciativa", correct: true },
+      { text: "O domínio de idiomas estrangeiros", correct: false }
     ]
   },
   {
-    question: "De acordo com o estudo de extensão, qual é o principal desafio de gestão enfrentado por empresas que crescem rapidamente como a VCA?",
+    question: "Qual recado o roteiro deixa para os estudantes universitários, conectando a fala do Clécio com a realidade da faculdade?",
     answers: [
-      { text: "Reduzir o quadro de funcionários para aumentar a margem de lucro", correct: false },
-      { text: "Manter a padronização dos processos e a comunicação entre departamentos em múltiplas cidades", correct: true },
-      { text: "Criar um departamento de marketing antes de expandir para outros estados", correct: false },
-      { text: "Substituir gestores locais por executivos vindos de grandes centros", correct: false }
+      { text: "Focar apenas nas notas para garantir o diploma com louvor", correct: false },
+      { text: "Especializar-se em uma única área desde o primeiro semestre", correct: false },
+      { text: "Tomar iniciativa e ir além do que é pedido, para desenvolver competências reais", correct: true },
+      { text: "Priorizar estágios em detrimento das disciplinas obrigatórias", correct: false }
     ]
   }
 ];
- 
+
 // Selecionando os Elementos
 const startScreen = document.getElementById("start-screen");
 const questionScreen = document.getElementById("question-screen");
@@ -106,10 +106,10 @@ const questionNumber = document.getElementById("question-number");
 const headerSubtitle = document.getElementById("header-subtitle");
 const resultScoreNum = document.getElementById("result-score-num");
 const scoreText = document.getElementById("score-text");
- 
+
 let currentQuestionIndex = 0;
 let score = 0;
- 
+
 // Evento Inicial
 startBtn.addEventListener("click", () => {
   startScreen.classList.add("hidden");
@@ -118,13 +118,13 @@ startBtn.addEventListener("click", () => {
   headerSubtitle.innerText = "Responda as perguntas abaixo com bastante atenção.";
   startQuiz();
 });
- 
+
 function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
   showQuestion();
 }
- 
+
 function showQuestion() {
   resetState();
   const currentQuestion = questions[currentQuestionIndex];
@@ -135,7 +135,7 @@ function showQuestion() {
   // Atualiza Barra de Progresso
   const progressPercentage = (currentQuestionIndex / questions.length) * 100;
   progressBar.style.width = `${progressPercentage}%`;
- 
+
   // Renderiza Alternativas
   currentQuestion.answers.forEach(answer => {
     const button = document.createElement("button");
@@ -151,12 +151,12 @@ function showQuestion() {
     answersElement.appendChild(button);
   });
 }
- 
+
 function resetState() {
   nextBtn.classList.add("hidden");
   answersElement.innerHTML = "";
 }
- 
+
 function selectAnswer(selectedButton, isCorrect) {
   const buttons = document.querySelectorAll(".answer-btn");
   buttons.forEach(btn => btn.disabled = true);
@@ -167,7 +167,7 @@ function selectAnswer(selectedButton, isCorrect) {
   } else {
     selectedButton.classList.add("wrong");
   }
- 
+
   // Mostra Gabarito
   const currentAnswers = questions[currentQuestionIndex].answers;
   buttons.forEach((btn, index) => {
@@ -175,10 +175,10 @@ function selectAnswer(selectedButton, isCorrect) {
       btn.classList.add("correct");
     }
   });
- 
+
   nextBtn.classList.remove("hidden");
 }
- 
+
 nextBtn.addEventListener("click", () => {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
@@ -187,7 +187,7 @@ nextBtn.addEventListener("click", () => {
     showResult();
   }
 });
- 
+
 function showResult() {
   questionScreen.classList.add("hidden");
   quizProgress.classList.add("hidden");
@@ -204,6 +204,6 @@ function showResult() {
   } else {
     feedbackMsg = "Excelente desempenho! Você domina com maestria os conceitos do projeto e da organização.";
   }
- 
+
   scoreText.innerHTML = `Você acertou <strong>${score}</strong> de <strong>${questions.length}</strong> perguntas.<br><br>${feedbackMsg}`;
 }
