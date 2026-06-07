@@ -1,0 +1,360 @@
+:root {
+  --primary: #0F52BA;        /* Azul VCA */
+  --primary-hover: #0a3e8f;
+  --secondary: #10B981;      /* Verde Falconi */
+  --secondary-hover: #059669;
+  --background-start: #f8fafc;
+  --background-end: #f0fdf4;
+  --dark-neutral: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --success-light: #f0fdf4;
+  --success-border: #10b981;
+  --error-light: #fef2f2;
+  --error-border: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 10% 20%, #f0f7ff 0%, #ffffff 50%, var(--background-end) 100%);
+  padding: 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Formas modernas com Glow de fundo */
+.bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.6;
+}
+.shape-1 {
+  width: 500px;
+  height: 500px;
+  background: rgba(15, 82, 186, 0.18);
+  top: -150px;
+  left: -100px;
+}
+.shape-2 {
+  width: 600px;
+  height: 600px;
+  background: rgba(16, 185, 129, 0.15);
+  bottom: -200px;
+  right: -100px;
+}
+.shape-3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(245, 158, 11, 0.06);
+  top: 40%;
+  left: 50%;
+}
+
+/* Card Principal Glassmorphism Refinado */
+.quiz-container {
+  width: 100%;
+  max-width: 680px;
+  background: var(--card-bg);
+  border-radius: 32px;
+  padding: 35px 40px 45px; /* Ajustado espaçamento superior interno */
+  box-shadow: 
+    0 30px 60px rgba(15, 82, 186, 0.04),
+    0 10px 20px rgba(0, 0, 0, 0.01),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* CONTAINER DA LOGO: Ajustado para não empurrar o texto para baixo */
+.brand-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px; /* Margem reduzida para aproximar do título */
+  width: 100%;
+}
+
+/* LOGO DA VCA: Pode mudar o tamanho aqui à vontade sem afastar o texto */
+.brand-logo {
+  width: 200px;        /* Aumentado de 180px para 240px para destacar bem! */
+  max-width: 100%;
+  height: auto;        /* Altura automática evita que o container cresça para baixo */
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(15, 82, 186, 0.1));
+  transition: transform 0.3s ease;
+}
+.brand-logo:hover {
+  transform: scale(1.03);
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  color: var(--dark-neutral);
+  background: linear-gradient(135deg, #093780 0%, #064e3b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header p {
+  color: var(--text-muted);
+  font-size: 1.00rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Barra de Progresso */
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 35px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 999px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Telas */
+.screen {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hidden {
+  display: none !important;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Tela de Entrada - Caixinha do Foguete Restaurada */
+.welcome-card {
+  text-align: center;
+}
+.welcome-icon-box {
+  width: 80px;
+  height: 75px;
+  background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: var(--primary);
+  font-size: 2.5rem;
+  box-shadow: 0 14px 26px rgba(5, 28, 63, 0.08);
+}
+.welcome-card h2 {
+  font-size: 1.6rem;
+  filter: linear-gradient(135deg, #093780 0%, #064e3b 100%);;
+  margin-bottom: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+.welcome-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animação do Foguete */
+.animate-bounce {
+  animation: float 2.5s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(5deg); }
+}
+
+/* Layout das Perguntas */
+.question-box {
+  display: flex;
+  flex-direction: column;
+}
+.badge {
+  display: inline-flex;
+  align-self: flex-start;
+  background: #eff6ff;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 99px;
+  margin-bottom: 18px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border: 1px solid rgba(15, 82, 186, 0.08);
+}
+.question-box h2 {
+  font-size: 1.4rem;
+  color: var(--dark-neutral);
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 28px;
+}
+
+/* Opções de Respostas */
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.answer-btn {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1.5px solid var(--border-color);
+  color: var(--dark-neutral);
+  padding: 18px 24px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 550;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.answer-btn:hover:not(:disabled) {
+  transform: translateX(4px);
+  border-color: var(--primary);
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 82, 186, 0.06);
+}
+.answer-btn:disabled {
+  cursor: default;
+}
+
+/* Certo / Errado */
+.answer-btn.correct {
+  background: var(--success-light) !important;
+  border-color: var(--success-border) !important;
+  color: #065f46 !important;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.12);
+}
+.answer-btn.wrong {
+  background: var(--error-light) !important;
+  border-color: var(--error-border) !important;
+  color: #991b1b !important;
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.12);
+}
+.feedback-icon {
+  font-size: 1.25rem;
+  display: none;
+}
+.correct .feedback-icon-correct {
+  display: inline-block;
+  color: var(--success-border);
+}
+.wrong .feedback-icon-wrong {
+  display: inline-block;
+  color: var(--error-border);
+}
+
+/* Botões Principais */
+.primary-btn {
+  width: 100%;
+  margin-top: 32px;
+  padding: 18px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 10px 25px rgba(15, 82, 186, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(15, 82, 186, 0.35);
+  filter: brightness(1.08);
+}
+
+/* Caixa de Resultados */
+.result-box {
+  text-align: center;
+}
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f0fdf4;
+  border: 5px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 30px;
+  box-shadow: 0 16px 32px rgba(16, 185, 129, 0.15);
+}
+.score-circle .number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #065f46;
+  line-height: 1;
+}
+.score-circle .label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+}
+.result-box h2 {
+  font-size: 1.9rem;
+  color: var(--dark-neutral);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+#score-text {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0 auto 32px;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  body { padding: 12px; }
+  .quiz-container { padding: 30px 24px 35px; border-radius: 24px; }
+  .header h1 { font-size: 1.9rem; }
+  .question-box h2 { font-size: 1.25rem; margin-bottom: 22px; }
+  .answer-btn { padding: 16px 20px; font-size: 0.98rem; }
+  .brand-logo { width: 190px; } /* Ajustado levemente para telas menores */
+}
